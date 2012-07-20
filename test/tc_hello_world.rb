@@ -5,6 +5,11 @@ require 'rack/test'
 ENV['RACK_ENV'] = 'test'
 
 class HelloWorldTest < Test::Unit::TestCase
+  # The Rack::Test::Methods module includes a variety of helper methods
+  # for simulating requests against an application and asserting
+  # expectations about the response. It’s typically included directly
+  # within the test context and makes a few helper methods and
+  # attributes available.
   include Rack::Test::Methods
 
   def app
