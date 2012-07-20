@@ -1,2 +1,14 @@
+See the tutorial at:
+
+     http://www.sinatrarb.com/testing.html
+
 Run the server and go with your browser to the page:
         http://localhost:4567/?name=chuchu
+or:
+  rack-test (master)$ rake test
+  ruby -I. test/tc_hello_world.rb
+
+or: 
+
+  rack-test (master)$ rake nomixin
+  ruby -I. test/tc_hello_world_without_mixin.rb
